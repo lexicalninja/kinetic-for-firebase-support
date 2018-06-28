@@ -1,0 +1,4 @@
+Updates:
+- HUD Updates. Users may need to reset their displays
+- In-App Purchases now use Google Pay
+- Smart Controller updating improvements

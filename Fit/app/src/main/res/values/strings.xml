@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kinetic</string>
+    <string name="empty_string">---</string>
+    <string name="action_settings">Settings</string>
+    <string name="today">Today</string>
+    <string name="start">Start</string>
+    <string name="rest">Rest</string>
+    <string name="workout">Workout</string>
+    <string name="ride">Ride</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="calendar">Calendar</string>
+    <string name="intensity_factor_short">IF</string>
+    <string name="kilojoules_short">KJs</string>
+    <string name="minimum_short">Min</string>
+    <string name="watt_formatter_integer">%1$dw</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="okay">Okay</string>
+    <string name="checkout">Checkout</string>
+    <string name="card">card</string>
+    <string name="shipping">shipping</string>
+    <string name="select">select</string>
+    <string name="name_caps">NAME</string>
+    <string name="address_caps">ADDRESS</string>
+    <string name="city_caps">CITY</string>
+    <string name="state_prov_caps">STATE/PROV</string>
+    <string name="postal_caps">POSTAL CODE</string>
+    <string name="country_caps">COUNTRY</string>
+    <string name="cancel">Cancel</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="purchase">Purchase</string>
+    <string name="success">Success!</string>
+    <string name="processing">Processing Your Payment</string>
+    <string name="remove">Remove</string>
+    <string name="add">Add</string>
+    <string name="monthly">Monthly</string>
+    <string name="quarterly">Quarterly</string>
+    <string name="reset_huds">Reset HUDs</string>
+    <string name="important">Important!</string>
+    <string name="leave">Leave</string>
+    <string name="stay">Stay</string>
+    <string name="video">Video</string>
+    <string name="end">End</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="lap">Lap</string>
+    <string name="results">Results</string>
+    <string name="mine">Mine</string>
+    <string name="no_video">No Video</string>
+
+
+    <string-array name="height_units">
+        <item>cms</item>
+        <item>inches</item>
+    </string-array>
+
+    <string-array name="weight_units">
+        <item>kgs</item>
+        <item>lbs</item>
+    </string-array>
+
+    <string name="kinetic_user">Kinetic User</string>
+
+    <string name="loading">Loading</string>
+    <string name="loading_wait_login">Please wait while we check your credentials</string>
+    <string name="loading_wait_account">Please wait while we load all of your settings and workouts</string>
+    <string name="loading_wait_analyze">Please wait while we analyze your workout</string>
+    <string name="loading_saved_payment_methods">Please wait while we gather your stored payment methods</string>
+
+    <string name="login_email">E-Mail</string>
+    <string name="login_password">Password</string>
+    <string name="login_log_in">Log In</string>
+    <string name="login_sign_up">Sign Up</string>
+    <string name="login_retrieve_password">Retrieve Password</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_create_account">Create Account?</string>
+    <string name="login_name">Name</string>
+    <string name="login_email_error_toast_message">Please enter an email address</string>
+    <string name="login_password_error_toast_message">Please enter your password</string>
+    <string name="login_invalid_login">Oops! We could not log you in. Please check to make sure your username and password are correct and try again.</string>
+    <string name="login_password_too_short">Please make sure your password is at least %1$d characters</string>
+    <string name="login_session_expired">Your session token has expired. For security purposes, please log in again.</string>
+
+    <string name="signup_invalid_email">The email you have entered is not a valid e-mail in our system.</string>
+    <string name="signup_email_already_registered">The e-mail you have entered is already registered. Please use the forgot Password option to get a new password.</string>
+    <string name="signup_failed_unkown_reason">An unknown error occurred (#%1$d). Please try again. If this continues, please open a help ticket at kinetic.fit with the message and error code.</string>
+
+    <string name="forgot_password_email_sent">An email has been sent to the account above. Please check your email to reset your password</string>
+
+    <string name="weak_password">Your password is too weak, please make sure it is at least 8 characters</string>
+    <string name="malformed_email">Your e-mail is not a recognized format. Please check that it is correct and try again</string>
+
+    <string name="title_activity_workout">Workout</string>
+    <string name="title_fragment_history">History</string>
+    <string name="title_fragment_settings">Settings</string>
+    <string name="title_fragment_support">Support</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="button_title_workout">Workout</string>
+    <string name="button_title_history">History</string>
+    <string name="button_title_details">Details</string>
+
+    <string name="button_title_settings">Settings</string>
+    <string name="button_title_profile">Profile</string>
+    <string name="button_title_workouts">Workouts</string>
+    <string name="button_title_displays">Displays</string>
+    <string name="button_title_sharing">Sharing</string>
+    <string name="button_title_buyinride">Buy inRIDE</string>
+
+    <string name="button_title_support">Support</string>
+    <string name="button_title_tutorial">Tutorial</string>
+    <string name="button_title_submitticket">Submit Ticket</string>
+    <string name="button_title_troubleshoot">Troubleshoot</string>
+    <string name="button_title_kineticweb">Kinetic Web</string>
+
+    <string name="checkbox_text_hide_popups">Hide Pop-ups</string>
+    <string name="workout_name_free_ride">Free Ride</string>
+    <string name="title_activity_tutorial">TutorialActivity</string>
+    <string name="title_activity_troubleshoot">TroubleshootActivity</string>
+    <string name="title_activity_ticket">TicketActivity</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_customize_hud">Displays</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_edit_workout">EditWorkoutActivity</string>
+    <string name="title_activity_sensors">Sensors</string>
+    <string name="title_activity_analysis">Analysis</string>
+
+    <string name="title_activity_profile_fragment_profile">Profile</string>
+    <string name="title_activity_profile_fragment_power">Power</string>
+    <string name="title_activity_profile_fragment_heart">Heart Rate</string>
+    <string name="title_activity_profile_fragment_social">Social</string>
+
+    <string name="title_activity_analysis_fragment_overview">Overview</string>
+    <string name="title_activity_analysis_fragment_power_zones">Power Zones</string>
+    <string name="title_activity_analysis_fragment_heart_zones">Heart Rate Zones</string>
+    <string name="title_activity_analysis_fragment_mean_maxes">Mean Maximums</string>
+
+    <string name="title_activity_profile_fragment_social_authenticate_strava">Authenticate Strava</string>
+    <string name="title_activity_profile_fragment_social_authenticate_ua">Authenticate Under Armour</string>
+    <string name="title_activity_profile_fragment_social_authenticate_trainingpeaks">Authenticate Training Peaks</string>
+    <string name="title_activity_profile_fragment_social_authenticate_2peak">Authenticate 2Peak</string>
+    <string name="title_activity_profile_fragment_social_authenticate_google">Authenticate Google</string>
+
+    <string name="profile_unit_selection_text">Units of Measure:</string>
+    <string name="profile_units_radio_button_imperial">Imperial</string>
+    <string name="profile_units_radio_button_metric">Metric</string>
+    <string name="profile_unit_display_lbs">lbs</string>
+    <string name="profile_unit_display_kgs">kgs</string>
+    <string name="profile_unit_display_centimeters">cms</string>
+    <string name="profile_unit_display_inches">inches</string>
+    <string name="profile_heading_text_name">name</string>
+    <string name="profile_heading_text_email">email</string>
+    <string name="profile_heading_text_chart">chart</string>
+    <string name="profile_heading_text_birthdate">birthdate</string>
+    <string name="profile_heading_text_weight">weight</string>
+    <string name="profile_heading_text_height">height</string>
+    <string name="profile_text_imperial">imperial</string>
+    <string name="profile_text_metric">metric</string>
+    <string name="profile_heading_text_zones">zones</string>
+    <string name="profile_heading_text_power">power</string>
+    <string name="profile_heading_text_heart">heart</string>
+    <string name="profile_text_ftp">ftp</string>
+    <string name="profile_text_resting">resting</string>
+    <string name="profile_text_max">max</string>
+    <string name="profile_text_inches">ins</string>
+    <string name="profile_text_pounds">lbs</string>
+    <string name="profile_text_kilos">kgs</string>
+    <string name="profile_text_centimeters">cms</string>
+    <string name="profile_save_and_exit_button">Save &amp; Exit</string>
+
+    <string name="analysis_workout_delete_error_message">There was an error connecting to the data store. Please try again later.</string>
+
+    <string name="prop_cadence">Cadence</string>
+    <string name="prop_cadence_average_lap">Lap Cadence Average</string>
+    <string name="prop_cadence_average_lap_previous">Previous Lap Cadence Average</string>
+    <string name="prop_cadence_average_lap_previous_short">Prv Avg</string>
+    <string name="prop_cadence_average_lap_short">Lap Avg</string>
+    <string name="prop_cadence_avg">Cadence Average</string>
+    <string name="prop_cadence_avg_short">Average</string>
+    <string name="prop_cadence_intervalTarget">Interval Cadence Target</string>
+    <string name="prop_cadence_intervalTarget_short">Target</string>
+    <string name="prop_cadence_max">Max Cadence</string>
+    <string name="prop_cadence_short">Cadence</string>
+    <string name="prop_calories">Calories</string>
+    <string name="prop_calories_accumulated">Accumulated Calories Burned</string>
+    <string name="prop_calories_short">Calories</string>
+    <string name="prop_distance">Distance</string>
+    <string name="prop_distance_accumulated">Accumulated Distance</string>
+    <string name="prop_distance_lap">Lap Distance</string>
+    <string name="prop_distance_lap_previous">Previous Lap Distance</string>
+    <string name="prop_distance_lap_previous_short">Prv Distance</string>
+    <string name="prop_distance_lap_short">Lap Distance</string>
+    <string name="prop_distance_short">Distance</string>
+    <string name="prop_heart">Heart</string>
+    <string name="prop_heartRate">Heart Rate</string>
+    <string name="prop_heartRate_avg">Heart Rate Average</string>
+    <string name="prop_heartRate_avg_lap">Lap Heart Rate Average</string>
+    <string name="prop_heartRate_avg_lap_previous">Previous Lap Heart Rate Average</string>
+    <string name="prop_heartRate_avg_lap_previous_short">Prv Avg</string>
+    <string name="prop_heartRate_avg_lap_short">Lap Avg</string>
+    <string name="prop_heartRate_avg_short">Average</string>
+    <string name="prop_heartRate_currentZone">Current Heart Rate Zone</string>
+    <string name="prop_heartRate_currentZone_short">Zone</string>
+    <string name="prop_heartRate_max">Max Heart Rate</string>
+    <string name="prop_heartRate_percentMax">% of Max Heart Rate</string>
+    <string name="prop_heartRate_percentMax_avg">% of Max Heart Rate Average</string>
+    <string name="prop_heartRate_percentMax_avg_lap">Lap % of Max Heart Rate</string>
+    <string name="prop_heartRate_percentMax_avg_lap_short">Lap Max Avg</string>
+    <string name="prop_heartRate_percentMax_avg_short">Max Avg</string>
+    <string name="prop_heartRate_percentMax_short">% of Max</string>
+    <string name="prop_heartRate_percentReserved">% of Reserved Heart Rate</string>
+    <string name="prop_heartRate_percentReserved_avg">% of Reserved Heart Rate Average</string>
+    <string name="prop_heartRate_percentReserved_avg_lap">Lap % of Reserved Heart Rate</string>
+    <string name="prop_heartRate_percentReserved_avg_lap_short">Lap Rsvd Avg</string>
+    <string name="prop_heartRate_percentReserved_avg_short">Rsvd Avg</string>
+    <string name="prop_heartRate_percentReserved_short">% of Rsvd</string>
+    <string name="prop_heartRate_short">Heart Rate</string>
+    <string name="prop_heartRate_time_zone_1">Time in Heart Rate Zone 1</string>
+    <string name="prop_heartRate_time_zone_1_short">Zone 1</string>
+    <string name="prop_heartRate_time_zone_2">Time in Heart Rate Zone 2</string>
+    <string name="prop_heartRate_time_zone_2_short">Zone 2</string>
+    <string name="prop_heartRate_time_zone_3">Time in Heart Rate Zone 3</string>
+    <string name="prop_heartRate_time_zone_3_short">Zone 3</string>
+    <string name="prop_heartRate_time_zone_4">Time in Heart Rate Zone 4</string>
+    <string name="prop_heartRate_time_zone_4_short">Zone 4</string>
+    <string name="prop_heartRate_time_zone_5">Time in Heart Rate Zone 5</string>
+    <string name="prop_heartRate_time_zone_5_short">Zone5</string>
+    <string name="prop_kcalPerMinute">Kilocalorie / Minute</string>
+    <string name="prop_kcalPerMinute_short">kcal / min</string>
+    <string name="prop_lap_count">Lap Count</string>
+    <string name="prop_lap_count_short">Lap Count</string>
+    <string name="prop_lap_time">Lap Time</string>
+    <string name="prop_lap_time_average">Average Lap Time</string>
+    <string name="prop_lap_time_average_short">Lap Avg</string>
+    <string name="prop_lap_time_previous">Previous Lap Time</string>
+    <string name="prop_lap_time_previous_short">Prv Time</string>
+    <string name="prop_lap_time_short">Lap Time</string>
+    <string name="prop_none">None</string>
+    <string name="prop_none_short">None</string>
+    <string name="prop_power">Power</string>
+    <string name="prop_power_average">Power Average</string>
+    <string name="prop_power_average_1m">1m Power Average</string>
+    <string name="prop_power_average_1m_short">1m Avg</string>
+    <string name="prop_power_average_20m">20m Power Average</string>
+    <string name="prop_power_average_20m_short">20m Avg</string>
+    <string name="prop_power_average_20s">20s Power Average</string>
+    <string name="prop_power_average_20s_short">20s Avg</string>
+    <string name="prop_power_average_5m">5m Power Average</string>
+    <string name="prop_power_average_5m_short">5m Avg</string>
+    <string name="prop_power_average_5s">5s Power Average</string>
+    <string name="prop_power_average_5s_short">5s Avg</string>
+    <string name="prop_power_average_lap">Lap Power Average</string>
+    <string name="prop_power_average_lap_previous">Previous Lap Power Average</string>
+    <string name="prop_power_average_lap_previous_short">Prv Avg</string>
+    <string name="prop_power_average_lap_short">Lap Avg</string>
+    <string name="prop_power_average_short">Average</string>
+    <string name="prop_power_avg">Power Average</string>
+    <string name="prop_power_current">Current Power</string>
+    <string name="prop_power_current_short">Power</string>
+    <string name="prop_power_currentPercentFTP">Current % of FTP</string>
+    <string name="prop_power_currentPercentFTP_short">% of FTP</string>
+    <string name="prop_power_currentZone">Current Power Zone</string>
+    <string name="prop_power_currentZone_short">Zone</string>
+    <string name="prop_power_intensityFactor">Intensity Factor</string>
+    <string name="prop_power_intensityFactor_short">Intensity</string>
+    <string name="prop_power_intervalTarget">Interval Power Target</string>
+    <string name="prop_power_intervalTarget_short">Target</string>
+    <string name="prop_power_kilojoules">Kilojoules</string>
+    <string name="prop_power_kilojoules_short">Kilojoules</string>
+    <string name="prop_power_max">Max Power</string>
+    <string name="prop_power_max_short">Maximum</string>
+    <string name="prop_power_normalized">Normalized Power</string>
+    <string name="prop_power_normalized_lap">Lap Normalized Power</string>
+    <string name="prop_power_normalized_lap_previous">Previous Lap Normalized Power</string>
+    <string name="prop_power_normalized_lap_previous_short">Prv NP</string>
+    <string name="prop_power_normalized_lap_short">Lap NP</string>
+    <string name="prop_power_normalized_short">Normalized</string>
+
+    <string name="prop_power_time_zone_1">Time in Power Zone 1</string>
+    <string name="prop_power_time_zone_1_short">Zone 1</string>
+
+    <string name="prop_power_time_zone_2">Time in Power Zone 2</string>
+    <string name="prop_power_time_zone_2_short">Zone 2</string>
+    <string name="prop_power_time_zone_3">Time in Power Zone 3</string>
+    <string name="prop_power_time_zone_3_short">Zone 3</string>
+    <string name="prop_power_time_zone_4">Time in Power Zone 4</string>
+    <string name="prop_power_time_zone_4_short">Zone 4</string>
+    <string name="prop_power_time_zone_5">Time in Power Zone 5</string>
+    <string name="prop_power_time_zone_5_short">Zone 5</string>
+    <string name="prop_power_time_zone_6">Time in Power Zone 6</string>
+    <string name="prop_power_time_zone_6_short">Zone 6</string>
+    <string name="prop_power_time_zone_7">Time in Power Zone 7</string>
+    <string name="prop_power_time_zone_7_short">Zone 7</string>
+
+
+    <string name="prop_power_TSS">Training Stress Score</string>
+    <string name="prop_power_TSS_short">TSS</string>
+    <string name="prop_power_wattsPerKilogram">Watts / Kilogram</string>
+    <string name="prop_power_wattsPerKilogram_short">Watts / KG</string>
+    <string name="prop_speed">Speed</string>
+    <string name="prop_speed_avg">Speed Average</string>
+    <string name="prop_speed_avg_lap">Lap Speed Average</string>
+    <string name="prop_speed_avg_lap_previous">Previous Lap Speed Average</string>
+    <string name="prop_speed_avg_lap_previous_short">Prv Avg</string>
+    <string name="prop_speed_avg_lap_short">Lap Avg</string>
+    <string name="prop_speed_avg_short">Average</string>
+    <string name="prop_speed_avg_units_kph">Average Speed (KPH)</string>
+    <string name="prop_speed_avg_units_mph">Average Speed (MPH)</string>
+    <string name="prop_speed_max">Maximum Speed Achieved</string>
+    <string name="prop_speed_max_short">Maximum</string>
+    <string name="prop_speed_max_units_kph">Max Speed (KPH)</string>
+    <string name="prop_speed_max_units_mph">Max Speed (MPH)</string>
+    <string name="prop_speed_short">Speed</string>
+    <string name="prop_speed_units_kph">Speed (KPH)</string>
+    <string name="prop_speed_units_mph">Speed (MPH)</string>
+    <string name="prop_time">Time</string>
+    <string name="prop_time_intervalRemaining">Interval Time Remaining</string>
+    <string name="prop_time_intervalRemaining_short">Interval</string>
+    <string name="prop_time_workoutRemaining">Workout Time Remaining</string>
+    <string name="prop_time_workoutRemaining_short">Remaining</string>
+    <string name="prop_time_workout_duration">Workout Duration</string>
+    <string name="prop_time_workout_duration_short">Duration</string>
+    <string name="prop_current_lap">Current Lap</string>
+
+    <string name="workout_zone_formatter">%1$d - %2$d</string>
+    <string name="workout_zone_formatter_max_zone">%1$d+</string>
+    <string name="workout_heart_rate_percent_formatter">%1$.2f %%</string>
+    <string name="mean_max_power_formatter">%1$.0f w</string>
+    <string name="mean_max_time_segment_minutes">%1$.0f m</string>
+    <string name="mean_max_time_segment_seconds">%1$.0f s</string>
+    <string name="anaylsis_zone_number_formatter">Zone %d</string>
+    <string name="heart_rate_formatter">%1d bpm</string>
+    <string name="percent_formatter">%d %%</string>
+    <string name="workout_new_ftp_calculater_formatter">Would you like to set your FTP to %1$d</string>
+    <string name="workout_new_FTP_positive_button">Set My New FTP!</string>
+    <string name="workout_new_FTP_cancel_button">No Thanks!</string>
+
+
+    <string name="ua_upload_privacy_formatter">/v7.1/privacy_option/%1$d/</string>
+    <string name="dialog_popup_dismis_button">DISMISS</string>
+
+    <string name="dialog_power_string_formatter">%1$d watts</string>
+
+    <string name="analysis_overview_new_ftp_formatter">You had a new FTP calculated for this workout of %1$d! Would you like to change from your current FTP of %2$d?</string>
+    <string name="analysis_overview_new_ftp_set_formatter">New FTP set based on this workout! Your new FTP is %1$d!</string>
+
+    <string name="analysis_error_loading_session">There was an error loading your session. Please refresh your sessions and try again.</string>
+
+    <string name="twitter_formatter">I just completed a workout with @KineticTrainer’s Fit! : %1$s, Avg \u26A1 %2$d watts, Max \u26A1 %3$d watts</string>
+    <string name="twitter_error_connecting">There was an error connecting to Twitter. Please be sure that you have the Twitter app installed and try again</string>
+
+    <string name="sensor_settings_speed_formatter">%1$.1f</string>
+    <string name="sensor_settings_power_formatter">%1dw</string>
+    <string name="sensor_settings_cadence_formatter">%1$.0f</string>
+    <string name="sensor_settings_activity_firmware_version_formatter">v%s</string>
+
+    <string name="youtube_video_toast">Double tap the HUD to hide video screen</string>
+    <string name="video_toast">Double tap to hide video screen</string>
+    <string name="youtube_unavailable">YouTube playback is currently unavailable when Chrome Casting.</string>
+    <string name="youtube_initialize_error">There was an error initializing the YouTube Player. Please check your connections and try again.</string>
+
+    <string name="settings_activity_assistants">Assistants</string>
+    <string name="settings_activity_hide_popups">Hide Popups</string>
+    <string name="settings_activity_hide_popups_help_text">hide interval popups</string>
+    <string name="settings_activity_auto_lap">Auto Lap</string>
+    <string name="settings_activity_auto_lap_help_text">lap markers when entering a new zone</string>
+    <string name="settings_activity_sound">Sound</string>
+    <string name="settings_activity_workout">Workout</string>
+    <string name="settings_activity_event_cues">Event Cues</string>
+    <string name="settings_activity_event_cues_help_text">SFX for pause / intervals / laps / etc.</string>
+    <string name="settings_activity_voice_over">Voice Over</string>
+    <string name="settings_activity_graph_metrics">Graph Metrics</string>
+    <string name="settings_activity_voice_over_help_text">reads interval popups</string>
+    <string name="settings_activity_zone_cues">Zone Cues</string>
+    <string name="settings_activity_zone_cues_help_text">SFX when entering a new zone</string>
+    <string name="settings_activity_difficuly_adjustment">Target Power Adjustment</string>
+    <string name="settings_activity_light_theme">Light Theme</string>
+    <string name="settings_activity_light_theme_help_text">light user interface theme (beta).\n Changes occur once you leave this screen</string>
+    <string name="setting_activity_dificulty_percent_text">%1$d%%</string>
+    <string name="settings_activity_voice_overs_on_string">Voice over on</string>
+    <string name="setting_activity_no_tts_installed">To use Voice Overs, please go to play store and install a text-to-speech engine</string>
+    <string name="setting_activity_graph_selector_power">Power</string>
+    <string name="setting_activity_graph_selector_cadence">Cadence</string>
+
+
+    <string name="fit_audio_voice_over_string_power_zone">Power Zone %1$d</string>
+    <string name="fit_audio_voice_over_string_heart_rate_zone">Heart Rate Zone %1$d</string>
+
+    <string name="root_history_adapter_heading_text">history</string>
+    <string name="train_smarter">train smarter</string>
+    <string name="root_training_plan_no_plan_body_text">A Training Plan takes the guess work out of improving. Custom-tailored to your time, experience level, and goals you will be better able to focused and achieve better results when you follow a plan.</string>
+    <string name="start_a_training_plan">start a training plan</string>
+
+    <string name="training_plan_duration_string_formatter">%1$d weeks</string>
+    <string name="training_plan_overview_start_button">Start</string>
+    <string name="training_plan_overview_cancel_button">Quit Plan</string>
+    <string name="training_plan_quit_dialog_message">Are you sure you want to stop the Training Plan? You cannot resume it later and it will be removed form your Calendar.</string>
+    <string name="training_plan_cancel_error">There was an error quitting your Training Plan. Please try again later.</string>
+    <string name="training_plan_dialog_adding_plan_title">Adding Plan</string>
+    <string name="training_plan_dialog_adding_plan_message">Please wait while we add your plan</string>
+    <string name="training_plan_dialog_quit_current_plan_message">Starting this Plan will stop your current Training Plan. Are you sure?</string>
+
+    <string name="training_plan_start_day_title">Start Day?</string>
+    <string name="training_plan_start_today_not_recommended_day">The recommended start date for this Plan is %1$s. When would you like to start this Training Plan?</string>
+    <string name="training_plan_start_day_today">The recommended start day for this Plan is today. Start this plan?</string>
+    <string name="training_plan_quit_title">Quit the current Training Plan?</string>
+
+    <string name="training_plan_day_days_string_formatter">day %1$d</string>
+    <string name="training_plan_day_instructions_header">instructions</string>
+    <string name="training_plan_day_workout_header">workout</string>
+    <string name="training_plan_day_post_ride_header">post ride</string>
+    <string name="training_plan_day_view_plan_button_text">View Plan</string>
+    <string name="training_plan_day_no_workout_text">No Workout Scheduled</string>
+    <string name="training_plan_starts_soon_message">Your Training Plan starts soon. Get hydrated and get ready to gear up!</string>
+
+
+    <string name="training_plan_subscriptions_bullets">25+ Training Plans\nHundreds More Workouts\nCustom Workout Creator\nMore Videos\nMore Workout Analysis</string>
+    <string name="training_plan_activity_subscription_callout_text">tap here for more plans</string>
+    <string name="selection_activity_subscription_callout_text">tap here for more workouts</string>
+    <string name="subscription_free_custom_workouts_message">You get %1$d custom workouts without a Smart subscription. Would you like to make this workout one of your %2$d free custom workouts?</string>
+    <string name="subscription_limited_custom_workouts_title">Limited Custom Workouts</string>
+    <string name="subscription_activate_subscription_alert_title">Subscription Required</string>
+    <string name="subscription_activate_subscription_alert_message">Custom Workouts require a Kinetic.Fit Subscription.</string>
+    <string name="analysis_activity_subscription_callout_text">tap here for more metrics</string>
+    <string name="enter_credit_card_info">Please enter your payment information:</string>
+    <string name="error_processing_payment_message">There was an error processing your payment. Please check your card and network settings and try again. </string>
+    <string name="error_validating_card">There was an error processing your credit card. Please check your card and try again.</string>
+    <string name="confirmation_message_text">You should receive a confirmation message from Google shortly.</string>
+    <string name="downloading_smart_data">Downloading Smart data.\nPlease be patient</string>
+    <string name="processing_payment_message">Please wait while we complete your purchase.</string>
+
+
+    <string name="calendar_duration_formatter">Duration: %1$02d:%2$02d</string>
+    <string name="calendar_if_formatter">IF: %1$.2f</string>
+    <string name="calendar_tss_formatter">TSS: %1$d</string>
+
+    <string name="analysis_heart_avg_max_label">Avg / Max</string>
+    <string name="analysis_heart_avg_reserve_label">Avg / Reserve</string>
+    <string name="analysis_mean_max_5s_mini_label">5s</string>
+    <string name="analysis_mean_max_20s_mini_label">20s</string>
+    <string name="analysis_mean_max_1m_mini_label">1m</string>
+    <string name="analysis_mean_max_5m_mini_label">5m</string>
+    <string name="analysis_mean_max_20m_mini_label">20m</string>
+    <string name="analysis_zone_number_formatter">Zone %1$d</string>
+    <string name="analysis_zone_name_recovery">Recovery</string>
+    <string name="analysis_zone_name_endurance">Endurance</string>
+    <string name="analysis_zone_name_tempo">Tempo</string>
+    <string name="analysis_zone_name_threshold">Threshold</string>
+    <string name="analysis_zone_name_vo2max">VO2Max</string>
+    <string name="analysis_zone_name_anaerobic">Anaerobic</string>
+    <string name="analysis_zone_name_neuromuscular">Neuromuscular</string>
+    <string name="analysis_zone_name_aerobic">Aerobic</string>
+    <string name="analysis_kj_formatter">%1$s kJ</string>
+    <string name="analysis_zone_heart_rate_percent_formatter">%1$.2f %%</string>
+    <string name="analysis_calories_burned_formatter">%1$.0f cals</string>
+    <string name="analysis_distance_formatter_km">%1$.2f km</string>
+    <string name="analysis_distance_formatter_mi">%1$.2f mi</string>
+    <string name="analysis_cadence_formatter">%1$d rpm</string>
+    <string name="analysis_speed_formatter_kph">%1$.1f kph</string>
+    <string name="analysis_speed_formatter_mph">%1$.1f mph</string>
+    <string name="confirm_delete_session_title">Confirm Delete</string>
+    <string name="confirm_delete_session_message">Are you sure you want to delete this item</string>
+
+    <string name="displays_icon_guide_title">icon guide</string>
+    <string name="displays_instructions">You can customize your Displays for your workouts here.
+        Add a new Display and tap the icons to select custom values to create your own personalized
+        Display.
+    </string>
+
+    <string name="subscriptions_fetching_prices">Fetching prices from Google and converting to
+        your
+        currency.
+    </string>
+    <string name="subscriptions_error_fetching_prices">There was an error fetching prices from Google
+    \nPlease check your connection and return to this screen.
+    </string>
+    <string name="subscription_callout_header">kinetic.fit smart subscription</string>
+    <string name="subscription_callout_button_formatter">tap here to get more %s</string>
+
+    <string name="sensor_update_in_progress">Sensor Firmware Update In Progress</string>
+    <string name="sensor_update_please_stay_on_screen">It is not recommended to navigate away from this screen or the app while updating</string>
+    <string name="sensor_update_downloading_firmware">Downloading Update</string>
+    <string name="sensor_update_installing_firmware">Installing Firmware</string>
+    <string name="sensor_update_validating_install">Validating Install</string>
+    <string name="sensor_update_complete">Your Smart Controller Firmware has updated. Please quit the Fit
+                                app completely, unplug your Smart Control for one minute, then
+                                plug it back it and restart Kinetic Fit.</string>
+
+    <string name="no_longer_supporting_this_version_of_android">As of mid-January, 2018, Kinetic Fit will no longer provide support updates to this version of Android. If you would like the most up-to-date version of the Fit app, you will need to upgrade your Android Operating System to Android Lollipop (5.0) or above. This app will still be usable on lower versions of Android, but support will be limited and there will be no further updates.</string>
+
+</resources>

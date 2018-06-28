@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="?attr/colorFitBg0"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@mipmap/fit_logo" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/border_b"
+            android:focusableInTouchMode="true"
+            android:hint="@string/login_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/passwordEditText"
+            android:onClick="requestFocus"
+            android:padding="8dp"
+            android:textCursorDrawable="@null"
+            android:textIsSelectable="true"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/border_b"
+            android:hint="@string/login_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/createAccountNameEditText"
+            android:padding="8dp"
+            android:textCursorDrawable="@null"
+            android:textIsSelectable="true"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/createAccountNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/border_b"
+
+            android:hint="@string/login_name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textCursorDrawable="@null"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.kinetic.fit.ui.widget.FitButton xmlns:fit="http://schemas.android.com/apk/res/com.kinetic.fit"
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_log_in"
+                fit:buttonType="Basic" />
+
+            <com.kinetic.fit.ui.widget.FitButton xmlns:fit="http://schemas.android.com/apk/res/com.kinetic.fit"
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_sign_up"
+                android:visibility="gone"
+                fit:buttonType="Basic" />
+
+            <com.kinetic.fit.ui.widget.FitButton xmlns:fit="http://schemas.android.com/apk/res/com.kinetic.fit"
+                android:id="@+id/retrievePasswordButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset Password"
+                android:visibility="gone"
+                fit:buttonType="Basic" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/forgotPasswordTextLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/login_forgot_password"
+            android:textColor="?attr/colorFitBody"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/loginTextLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/login_log_in"
+            android:textColor="?attr/colorFitBody"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/createAccountTextLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Sign Up"
+            android:textColor="?attr/colorFitBody"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

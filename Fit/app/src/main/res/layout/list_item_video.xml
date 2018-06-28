@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kinetic.fit.ui.video.select.VideoItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/border_tblr"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp"
+    android:paddingTop="1dp"
+    android:elevation="8dp"
+    android:id="@+id/layout">
+
+    <ImageView
+        android:id="@+id/videoThumb"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_width="125dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?attr/colorFitBg0"
+            android:orientation="horizontal"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:layout_marginEnd="1dp">
+
+            <TextView
+                android:id="@+id/videoTitle"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_weight="0.94"
+                android:gravity="center_vertical"
+                android:text="Video Title"
+                android:textSize="18sp"
+                android:textColor="?attr/colorFitHeadline" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_t"
+            android:orientation="horizontal"
+            android:layout_marginEnd="1dp">
+
+            <TextView
+                android:id="@+id/authorName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Author Name"
+                android:textSize="14sp"
+                android:background="?attr/colorFitBg1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="00:00:00"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:background="?attr/colorFitBg1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.kinetic.fit.ui.video.select.VideoItemView>

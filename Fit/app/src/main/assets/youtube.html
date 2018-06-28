@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * { margin: 0; padding: 0; }
+        html, body { width: 100%; height: 100%; }
+    </style>
+</head>
+<body>
+<div id="player"></div>
+<script type="text/javascript">
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '100%',
+      width: '100%',
+      playerVars: {
+        controls: '0',
+        enablejsapi: '1',
+        //origin: 'https://www.kinetic.fit',
+        iv_load_policy: '3',
+        showinfo: '0',
+        fs: '0',
+        loop: '1',
+        rel: '0',
+        playsinline: '1'
+      },
+      events: {
+        'onReady': onReady,
+        'onStateChange': onStateChange
+      }
+    });
+    
+  };
+  function onReady(event) {
+    // setAndPlayVideo(event);
+    bridge.playerReady();
+    // window.location.href = 'ytplayer://onYouTubeIframeAPIReady';
+  }
+  function onStateChange(event) {
+    bridge.playerStateChange(event.data);
+    bridge.setTitle(event.target.getVideoData().title);
+  }
+  function onPlaybackQualityChange(event) {
+  
+  }
+  function onPlayerError(event) {
+  
+  }
+
+  function setAndPlayVideo(playlistId, index, seconds) {
+    
+    if(seconds != -1 && index != -1){
+      player.loadPlaylist({'list': playlistId, 'listType':'playlist', 'index': index, 'startSeconds': seconds});
+    }else {
+      player.loadPlaylist({'list': playlistId, 'listType':'playlist'});
+    }
+    // player.setLoop(true);
+    player.playVideo();
+  }
+
+  function getProgress() {
+    if(player.getDuration() != 0){
+      var progress = player.getCurrentTime() / player.getDuration() * 100;
+      bridge.videoProgress(progress);
+    }
+  }
+
+  function saveState() {
+    var int1 = player.getCurrentTime();
+    var int2 = player.getPlaylistIndex();
+    bridge.vidInfo(int1, int2);
+  }
+  
+
+</script>
+</body>
+</html>

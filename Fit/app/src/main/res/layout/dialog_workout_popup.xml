@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:background="@drawable/border_tblr_green_square"
+    android:orientation="vertical">
+
+    <com.lb.auto_fit_textview.AutoResizeTextView
+        android:id="@+id/dialog_popup_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Test"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="?attr/colorFitBg1"
+        android:textColor="?attr/colorFitHeadline"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorFitBg2"
+        android:orientation="vertical">
+
+        <com.lb.auto_fit_textview.AutoResizeTextView
+            android:id="@+id/dialog_popup_duration_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_t"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="02:00"
+            android:textColor="?attr/colorFitPrimary"
+            android:textSize="20sp" />
+
+        <com.lb.auto_fit_textview.AutoResizeTextView
+            android:id="@+id/dialog_popup_power_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_b"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="200 watts"
+            android:textColor="?attr/colorFitPower"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/dialog_power_view"
+                layout="@layout/hud_property_view_mini" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/dialog_laps_view"
+                layout="@layout/hud_property_view_mini" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

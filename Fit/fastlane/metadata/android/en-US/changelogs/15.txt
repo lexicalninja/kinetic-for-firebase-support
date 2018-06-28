@@ -1,0 +1,2 @@
+Updates:
+- Bug fix for heart rates > 127

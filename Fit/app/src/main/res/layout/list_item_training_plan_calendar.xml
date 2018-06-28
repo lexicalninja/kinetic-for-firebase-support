@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorFitBg0"
+    android:clickable="true"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/calendar_day_number"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_margin="16dp"
+        android:background="?attr/colorFitBg2"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:text="88"
+        android:textColor="?attr/colorFitPrimary"
+        android:textSize="35sp" />
+
+    <com.kinetic.fit.ui.widget.WorkoutGraphView xmlns:app="http://schemas.android.com/apk/com.kinetic.fit"
+        android:id="@+id/calendar_workout_graph"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_below="@id/calendar_day_number"
+        app:showProgressLine="false"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/calendar_day_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/calendar_day_number"
+        android:layout_toEndOf="@id/calendar_day_number"
+        android:text="TP Day Title"
+        android:textColor="?attr/colorFitHeadline"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/calendar_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/calendar_day_title"
+        android:layout_below="@id/calendar_day_title"
+        android:layout_marginStart="16dp"
+        android:text="@string/calendar_duration_formatter" />
+
+</RelativeLayout>

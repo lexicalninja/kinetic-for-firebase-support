@@ -1,0 +1,3 @@
+Updates:
+- Video Playback fixes
+- Smart Control Read Support

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="?attr/colorFitBg0">
+
+    <TextView
+        android:id="@+id/training_plan_card_overview_plan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Training Plan Name Here asdf asdf asdf asdf a"
+        android:textColor="?attr/colorFitHeadline"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/training_plan_overview_creator_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/training_plan_card_overview_plan_name"
+        android:layout_below="@id/training_plan_card_overview_plan_name"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="created by someone"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/training_plan_overview_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/training_plan_card_overview_plan_name"
+        android:layout_below="@id/training_plan_overview_creator_name"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="4 weeks"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/training_plan_overview_volume_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/training_plan_overview_duration"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp" />
+
+    <ImageView
+        android:id="@+id/training_plan_overview_category_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/training_plan_overview_duration"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@id/training_plan_overview_volume_icon" />
+
+    <ImageView
+        android:id="@+id/training_plan_overview_difficulty_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/training_plan_overview_duration"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/training_plan_overview_category_icon" />
+
+
+</RelativeLayout>

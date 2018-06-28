@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="?attr/colorFitBg0"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/gear_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/gear_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gear_image"
+        android:gravity="center"
+        android:text="Kinetic inRide Pod"
+        android:textColor="?attr/colorFitHeadline"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/gear_retail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/gear_name"
+        android:layout_margin="8dp"
+        android:textColor="?attr/colorFitDestructive" />
+
+    <TextView
+        android:id="@+id/gear_promo_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gear_name"
+        android:layout_margin="8dp"
+        android:layout_toLeftOf="@id/gear_retail_price"
+        android:text="$10.00"
+        android:textColor="?attr/colorFitHeadline" />
+</RelativeLayout>

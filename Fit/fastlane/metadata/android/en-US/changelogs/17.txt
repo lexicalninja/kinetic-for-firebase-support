@@ -1,0 +1,5 @@
+Updates:
+- Initial Chromecast Support
+- Initial Exprot to Strava
+- Autosize text views
+- Activate Trial Sub w/ inRide for Sufferfest Video Access this week.

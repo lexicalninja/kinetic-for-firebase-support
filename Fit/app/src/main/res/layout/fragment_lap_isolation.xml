@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorFitBg2"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:text="power zones"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorFitBg1"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/prop_power_TSS_short" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/intensity_factor_short" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kilojoules_short" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/prop_power_normalized_short" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="?attr/colorFitBg1"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/lap_isolation_tss_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/empty_string"
+                android:textColor="?attr/colorFitPower" />
+
+            <TextView
+                android:id="@+id/lap_isolation_if_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/empty_string"
+                android:textColor="?attr/colorFitPower" />
+
+            <TextView
+                android:id="@+id/lap_isolation_kj_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/empty_string"
+                android:textColor="?attr/colorFitPower" />
+
+            <TextView
+                android:id="@+id/lap_isolation_normalized_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/empty_string"
+                android:textColor="?attr/colorFitPower" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/power_zones_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/colorFitBg0"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:text="heart zones"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorFitBg1"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/analysis_heart_avg_max_label" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/analysis_heart_avg_reserve_label" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/minimum_short" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="?attr/colorFitBg1"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/lap_isolation_heart_avg_max_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/empty_string"
+                android:textColor="?attr/colorFitHeart" />
+
+            <TextView
+                android:id="@+id/lap_isolation_heart_avg_reserve_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/empty_string"
+                android:textColor="?attr/colorFitHeart" />
+
+            <TextView
+                android:id="@+id/lap_isolation_heart_min_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/empty_string"
+                android:textColor="?attr/colorFitHeart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/heart_zones_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/colorFitBg0"
+            android:orientation="vertical" />
+
+        <com.kinetic.fit.ui.widget.SubscriptionCalloutWidget
+            android:id="@+id/subscription_callout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:text="mean maximums"
+            android:textAllCaps="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/mm1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorFitBg1"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/analysis_mean_max_5s_mini_label" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/analysis_mean_max_20s_mini_label" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/analysis_mean_max_1m_mini_label" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/analysis_mean_max_5m_mini_label" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/analysis_mean_max_20m_mini_label" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mm2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mm1"
+                android:background="?attr/colorFitBg1"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/lap_isolation_mean_max_5s_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/empty_string"
+                    android:textColor="?attr/colorFitPower" />
+
+                <TextView
+                    android:id="@+id/lap_isolation_mean_max_20s_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/empty_string"
+                    android:textColor="?attr/colorFitPower" />
+
+                <TextView
+                    android:id="@+id/lap_isolation_mean_max_1m_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/empty_string"
+                    android:textColor="?attr/colorFitPower" />
+
+                <TextView
+                    android:id="@+id/lap_isolation_mean_max_5m_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/empty_string"
+                    android:textColor="?attr/colorFitPower" />
+
+                <TextView
+                    android:id="@+id/lap_isolation_mean_max_20m_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/empty_string"
+                    android:textColor="?attr/colorFitPower" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/sub_req_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorFitBgAlpha"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@id/mm2"
+                android:text="smart subscription required"
+                android:textAllCaps="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

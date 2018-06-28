@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorFitBg0">
+
+    <TextView
+        android:id="@+id/training_plan_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:text="title"
+        android:textAllCaps="true"
+        android:textSize="14sp" />
+
+
+    <ProgressBar
+        android:id="@+id/training_plan_progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/training_plan_title"
+        android:layout_margin="4dp"
+        android:progressTint="?attr/colorFitPrimary" />
+    <TextView
+        android:id="@+id/training_plan_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:textColor="?attr/colorFitHeadline"
+        android:layout_below="@id/training_plan_progress_bar"
+        android:layout_marginStart="4dp"
+        />
+    <TextView
+        android:id="@+id/training_plan_day_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/training_plan_headline"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="8dp"
+        android:text="@string/login_invalid_login" />
+
+    <com.kinetic.fit.ui.widget.FitButton
+        android:id="@+id/training_plan_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/training_plan_day_message"
+        android:layout_margin="16dp"
+        android:text="start training plan"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+</RelativeLayout>

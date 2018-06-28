@@ -1,0 +1,4 @@
+Updates:
+- Twitter integration - Tweet your rides!
+- DropBox Integration
+- hot fixes for release 138

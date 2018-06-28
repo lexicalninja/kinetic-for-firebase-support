@@ -1,0 +1,4 @@
+Updates:
+- Rename Custom Workouts
+- Import MRC and ERG files from places like Training Peaks
+- Updates to Subscription Services

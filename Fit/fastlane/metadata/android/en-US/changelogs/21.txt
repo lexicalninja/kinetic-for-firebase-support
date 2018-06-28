@@ -1,0 +1,4 @@
+Updates:
+- Fix Signup bugs
+- Updates to results screens
+- Alpha MapMyFitness uploads

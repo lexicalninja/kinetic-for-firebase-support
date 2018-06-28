@@ -1,0 +1,132 @@
+<resources>
+
+    <style name="KineticTheme" parent="Theme.AppCompat">
+        <item name="actionBarStyle">@style/KineticActionBar</item>
+        <item name="android:textColor">?attr/colorFitBody</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+
+        <item name="colorFitBg0">@color/fit_dark_bg0</item>
+        <item name="colorFitBg1">@color/fit_dark_bg1</item>
+        <item name="colorFitBg2">@color/fit_dark_bg2</item>
+        <item name="colorFitBgAlpha">@color/fit_dark_bgalpha</item>
+        <item name="colorFitPrimary">@color/fit_dark_green</item>
+        <item name="colorFitGreen">@color/fit_dark_green</item>
+        <item name="colorFitBorder">@color/fit_dark_border</item>
+        <item name="colorFitSeparator">@color/fit_dark_gray</item>
+        <item name="colorFitShadow">@color/black</item>
+        <item name="colorFitBannerText">@color/black</item>
+        <item name="colorFitHeadline">@color/white</item>
+        <item name="colorFitBody">@color/fit_dark_gray</item>
+        <item name="colorFitPower">@color/fit_dark_power</item>
+        <item name="colorFitHeart">@color/fit_dark_heart</item>
+        <item name="colorFitSpeed">@color/fit_dark_speed</item>
+        <item name="colorFitCadence">@color/fit_dark_cadence</item>
+        <item name="colorFitTime">@color/fit_dark_green</item>
+        <item name="colorFitDistance">@color/fit_dark_green</item>
+        <item name="colorFitSuccess">@color/fit_dark_green</item>
+        <item name="colorFitNotify">@color/fit_dark_green</item>
+        <item name="colorFitFailure">@color/fit_dark_red</item>
+        <item name="colorFitCancel">@color/fit_dark_gray</item>
+        <item name="colorFitDestructive">@color/fit_dark_red</item>
+        <item name="colorFitDisabled">@color/fit_dark_gray</item>
+
+    </style>
+
+    <style name="KineticTheme.NoTitle" parent="KineticTheme">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="KineticTheme.Light" parent="KineticTheme">
+        <item name="actionBarStyle">@style/KineticActionBar</item>
+
+        <item name="colorFitBg0">@color/fit_light_bg0</item>
+        <item name="colorFitBg1">@color/fit_light_bg1</item>
+        <item name="colorFitBg2">@color/fit_light_bg2</item>
+        <item name="colorFitBgAlpha">@color/fit_light_bgalpha</item>
+        <item name="colorFitPrimary">@color/fit_light_green</item>
+        <item name="colorFitGreen">@color/fit_light_green</item>
+        <item name="colorFitBorder">@color/fit_light_border</item>
+        <item name="colorFitSeparator">@color/fit_light_gray</item>
+        <item name="colorFitShadow">@color/black</item>
+        <item name="colorFitBannerText">@color/black</item>
+        <item name="colorFitHeadline">@color/black</item>
+        <item name="colorFitBody">@color/fit_light_gray</item>
+        <item name="colorFitPower">@color/fit_light_power</item>
+        <item name="colorFitHeart">@color/fit_light_heart</item>
+        <item name="colorFitSpeed">@color/fit_light_speed</item>
+        <item name="colorFitCadence">@color/fit_light_cadence</item>
+        <item name="colorFitTime">@color/fit_light_green</item>
+        <item name="colorFitDistance">@color/fit_light_green</item>
+        <item name="colorFitSuccess">@color/fit_light_green</item>
+        <item name="colorFitNotify">@color/fit_light_green</item>
+        <item name="colorFitFailure">@color/fit_light_red</item>
+        <item name="colorFitCancel">@color/fit_light_gray</item>
+        <item name="colorFitDestructive">@color/fit_light_red</item>
+        <item name="colorFitDisabled">@color/fit_light_gray</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="KineticActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="background">?attr/colorFitBg0</item>
+        <item name="android:itemBackground">?attr/colorFitBg0</item>
+        <item name="titleTextStyle">@style/ActionBarHorizon</item>
+
+    </style>
+
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/menu_overflow_button_light</item>
+    </style>
+
+    <style name="ActionBarHorizon">
+        <item name="android:textColor">?attr/colorFitHeadline</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="KineticTheme.PagerTitleStrip">
+        <item name="android:background">@drawable/border_b</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">?attr/colorFitPrimary</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Power">
+        <item name="android:textColor">?attr/colorFitPower</item>
+    </style>
+
+    <style name="Distance">
+        <item name="android:textColor">?attr/colorFitDistance</item>
+    </style>
+
+    <style name="Speed">
+        <item name="android:textColor">?attr/colorFitSpeed</item>
+    </style>
+
+    <style name="Time">
+        <item name="android:textColor">?attr/colorFitTime</item>
+    </style>
+
+    <style name="Calories">
+        <item name="android:textColor">?attr/colorFitPower</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">?attr/colorFitPrimary</item>
+    </style>
+
+</resources>

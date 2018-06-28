@@ -1,0 +1,3 @@
+Updates:
+- Lots of bug fixes.
+- Improving Video integrations.

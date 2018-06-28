@@ -1,0 +1,188 @@
+//app level
+
+buildscript {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.3'
+        classpath 'io.fabric.tools:gradle:1.+'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'io.fabric'
+apply plugin: 'realm-android'
+
+repositories {
+    maven { url 'https://zendesk.artifactoryonline.com/zendesk/repo' }
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://github.com/WickeDev/stetho-realm/raw/master/maven-repo' }
+    google()
+    mavenCentral()
+}
+
+kapt {
+    generateStubs = true
+}
+
+android {
+    compileSdkVersion 27
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        applicationId "com.kinetic.fit"
+        versionCode readBuildCode()
+        versionName readVersionName()
+        minSdkVersion 19
+        targetSdkVersion 27
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(RELEASE_STORE_FILE)
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules-build-optimized.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            ext.enableCrashlytics = false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    task doBuildNumberIncrement {
+        doLast {
+            incrementBuildNumber()
+        }
+    }
+
+    dexOptions {
+        // Prevent OutOfMemory with MultiDex during the build phase
+        javaMaxHeapSize "8g"
+    }
+
+}
+
+dependencies {
+    implementation files('src/main/java/libs/KineticSDK.jar')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    implementation 'com.google.android.gms:play-services-cast:15.0.1'
+    implementation 'com.google.android.gms:play-services-wallet:15.0.1'
+    implementation 'com.google.android.gms:play-services-fitness:15.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+    implementation 'com.google.firebase:firebase-firestore:17.0.2'
+    implementation('com.google.apis:google-api-services-youtube:v3-rev120-1.19.0') {
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    }
+    implementation files('src/main/java/libs/YouTubeAndroidPlayerApi.jar')
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:mediarouter-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    kapt 'com.android.databinding:compiler:3.1.3'
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation 'com.android.billingclient:billing:dp-1'
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+    kapt "org.androidannotations:androidannotations:4.4.0"
+    implementation 'org.androidannotations:androidannotations-api:4.4.0'
+    implementation 'com.neovisionaries:nv-bluetooth:1.8'
+    implementation 'com.zendesk:sdk:1.10.0.1'
+    implementation 'info.hoang8f:android-segmented:1.0.6'
+    implementation 'net.danlew:android.joda:2.9.5'
+    implementation 'com.mobsandgeeks:android-saripaar:2.0.3'
+    implementation 'com.jaredrummler:android-device-names:1.1.2'
+    implementation('com.goebl:david-webb:1.3.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation 'com.koushikdutta.ion:ion:2.1.9'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.stripe:stripe-android:4.0.1'
+    implementation 'io.card:android-sdk:5.5.0'
+    implementation 'com.dropbox.core:dropbox-core-sdk:3.0.3'
+    implementation('com.twitter.sdk.android:twitter:2.3.2@aar') {
+        transitive = true
+    }
+    implementation 'com.android.volley:volley:1.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+def readVersion() {
+    def versionFile = new File(project.rootDir, 'version.properties')
+    def version = new Properties()
+    def stream
+    try {
+        stream = new FileInputStream(versionFile)
+        version.load(stream)
+    } catch (FileNotFoundException ignore) {
+
+    } finally {
+        if (stream != null) stream.close()
+    }
+    if (!version['major']) version['major'] = "1"
+    if (!version['minor']) version['minor'] = "0"
+    if (!version['patch']) version['patch'] = "0"
+    if (!version['build']) version['build'] = "0"
+    return version
+}
+
+def readVersionName() {
+    def version = readVersion()
+    return "${version['major']}.${version['minor']}.${version['patch']}"
+}
+
+def readBuildCode() {
+    def version = readVersion()
+    def build = version['build'] as int
+    return build
+}
+
+def incrementBuildNumber() {
+    def versionFile = new File(project.rootDir, 'version.properties')
+    def version = readVersion()
+    def build = version['build'] as int
+    build++
+    version['build'] = build.toString()
+    def stream = new FileOutputStream(versionFile)
+    try {
+        version.store(stream, null)
+    } finally {
+        stream.close()
+    }
+    return build
+}

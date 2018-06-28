@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorFitBg0"
+    android:orientation="vertical">
+
+    <com.kinetic.fit.ui.widget.FitButton
+        xmlns:fit="http://schemas.android.com/apk/res/com.kinetic.fit"
+        android:id="@+id/button_support_kbase"
+        fit:buttonType="Basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:text="Knowledge Base" />
+
+    <com.kinetic.fit.ui.widget.FitButton
+        xmlns:fit="http://schemas.android.com/apk/res/com.kinetic.fit"
+        android:id="@+id/button_support_contact"
+        fit:buttonType="Basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:text="Contact Us" />
+
+    <com.kinetic.fit.ui.widget.FitButton
+        xmlns:fit="http://schemas.android.com/apk/res/com.kinetic.fit"
+        android:id="@+id/button_support_tickets"
+        fit:buttonType="Basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:text="My Tickets" />
+
+</LinearLayout>

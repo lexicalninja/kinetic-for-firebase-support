@@ -1,0 +1,2 @@
+Updates:
+- Set your Functional Threshold Power (FTP) in the Profile area.

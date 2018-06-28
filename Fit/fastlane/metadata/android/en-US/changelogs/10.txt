@@ -1,0 +1,5 @@
+Updates:
+- Historical view of your workout sessions
+- Basic overview of workout sessions
+- Export workout session to FIT file format (Strava, Training Peaks, Garmin upload)
+- Misc bug fixes.

@@ -1,0 +1,2 @@
+Initial Smart Control Support
+Numerous bug fixes and stability enhancements.

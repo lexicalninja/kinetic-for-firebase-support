@@ -1,0 +1,3 @@
+Updates:
+- Support tickets can be tracked in the App
+- Logging in / Signing up fix for Android auto-filling emails w/ a space at the end
