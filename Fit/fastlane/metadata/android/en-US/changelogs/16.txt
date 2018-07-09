@@ -1,3 +1,0 @@
-Updates:
-- Real bug fix for heart rates > 127
-- Cadence smoothing

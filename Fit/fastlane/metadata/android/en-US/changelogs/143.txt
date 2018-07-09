@@ -1,4 +1,0 @@
-Updates:
-- Custom Displays!
-- bug fixes
-- stability fixes

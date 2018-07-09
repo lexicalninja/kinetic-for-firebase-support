@@ -1,6 +1,0 @@
-Updates:
-- Improved Chromecast support
-- Initial playback of movies on device
-- Initial UI for Advanced Session Analysis
-- Initial Workout Drawing (work-in-progress)
-- Bug fixes and more!

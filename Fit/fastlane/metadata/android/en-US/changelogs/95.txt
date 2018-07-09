@@ -1,3 +1,0 @@
-Updates:
-- Fix for Session data not syncing to Kinetic.fit dashboard
-- Fix for Session Analysis showing data from wrong workout

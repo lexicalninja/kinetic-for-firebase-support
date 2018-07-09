@@ -1,4 +1,0 @@
-Updates:
-- Training Plans!
-- Major Stability and System Enhancements
-- Kinetic.fit sync enhancements

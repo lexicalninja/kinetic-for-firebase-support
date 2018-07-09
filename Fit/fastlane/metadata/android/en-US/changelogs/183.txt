@@ -1,3 +1,0 @@
-Updates:
-- Fix for youtube video crash on rotate when workout starts
-- Important info regarding Android 4.4.x (KitKat/19) devices in home screen alert!

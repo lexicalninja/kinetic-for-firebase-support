@@ -1,4 +1,0 @@
-Updates:
-- Fix Strava Distance in Uploads
-- Adding Workout Graph (drawing real time power coming soon)
-- Numerous other bug fixes.

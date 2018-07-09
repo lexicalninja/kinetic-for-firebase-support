@@ -1,5 +1,0 @@
-Updates:
-- Calibrate and Firmware Update User Interface changes
-- Bug fixes
-- Memory allocation improvements
-- Set default FTP to 150 instead of 100

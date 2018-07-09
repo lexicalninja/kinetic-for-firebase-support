@@ -1,3 +1,0 @@
-Updates:
-- Dropbox videos
-- export to .csv file

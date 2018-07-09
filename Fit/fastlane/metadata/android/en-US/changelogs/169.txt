@@ -1,3 +1,0 @@
-Updates:
-- fixes crash on firmware update screen
-- fixes crash after connecting to YouTube with Google Account

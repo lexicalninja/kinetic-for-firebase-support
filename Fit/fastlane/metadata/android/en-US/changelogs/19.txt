@@ -1,4 +1,0 @@
-Updates:
-- Fix Free Ride crash
-- Fix Profile saving crash
-- Fix Select-Video crash
